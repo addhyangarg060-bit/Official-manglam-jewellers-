@@ -1,0 +1,82 @@
+MANGLAM JEWELLERS WEBSITE — SETUP GUIDE
+=======================================
+
+WHAT IS INCLUDED
+- index.html, style.css, script.js: public website
+- config.js: paste the backend URL here
+- Code.gs: private Google Apps Script backend
+- Shared admin password is configured on the server side in Code.gs.
+- Google Reviews button uses the exact Google link supplied by you:
+  https://share.google/fpJ3IRxAdTCu9oSn0
+
+IMPORTANT BEFORE PUBLISHING
+The website files alone cannot securely save rate edits or product uploads. The included
+Google Apps Script backend is required. It stores rate/product details in Script Properties
+and product images in a Google Drive folder.
+
+STEP 1 — CREATE THE BACKEND
+1. On a computer or phone browser, open https://script.google.com/
+2. Sign in to the Google account that should own the website data.
+3. Tap New project.
+4. Delete the starter code and paste all contents of Code.gs from this folder.
+5. Save the project with the name "Manglam Jewellers Website Backend".
+
+STEP 2 — DEPLOY IT
+1. In Apps Script, tap Deploy > New deployment.
+2. Select the gear icon / deployment type and choose Web app.
+3. Execute as: Me.
+4. Who has access: Anyone.
+5. Tap Deploy and approve the Google permissions (Drive and script properties).
+6. Copy the Web app URL ending in /exec.
+
+The public GET endpoint only returns public rate and product data. Admin actions require
+the shared password at login and a temporary server-issued session token. Keep the Apps
+Script project private; do not share its editor access with customers.
+
+STEP 3 — CONNECT THE WEBSITE
+1. Open config.js in this folder.
+2. Replace the empty API_URL with your copied /exec URL, keeping the quotation marks.
+3. Save config.js.
+4. Upload the website folder contents to your GitHub repository (keep the assets folder).
+
+STEP 4 — ADD YOUR ORIGINAL LOGO
+The original logo image was not available in this file-generation session, so it has NOT
+been recreated or substituted. Add your exact logo image into the assets folder and name
+it: manglam-logo.png
+The website will then display it in the header. Please use your original supplied logo file.
+
+STEP 5 — PUBLISH WITH GITHUB PAGES
+1. Open your GitHub repository.
+2. Upload index.html, style.css, script.js, config.js and the assets folder.
+3. Open Settings > Pages.
+4. Select Deploy from a branch, choose main and / (root), then Save.
+5. Open the published Pages URL.
+
+ADMIN ACCESS
+- Tap Admin Login on the website.
+- Enter the shared admin password that is set in Code.gs.
+- Multiple people can use the same password.
+- Customers do not need a password.
+- Admin sessions expire after 6 hours; log in again when asked.
+- Admins can update 24K, 22K, 20K, 18K and silver rates, upload products and delete products.
+
+SECURITY / PRACTICAL NOTES
+- The shared password is stored in server-side Apps Script code, not in the public website JS.
+- Anyone with the password can manage the website. Share it only with trusted people.
+- The product photos are stored in the Google Drive folder created automatically by the backend.
+  The backend makes product photos viewable by link so website visitors can see them.
+- Do not delete the Drive folder or its product images.
+- Google Apps Script has usage quotas and is suitable for a small shop website, but it is not
+  an enterprise-scale ecommerce backend.
+- The Google Reviews button opens the Google Maps share link supplied by you. Google may open
+  the listing first; customers can then choose the review option.
+- Rates are manual and shown per gram and per 10 grams. Making charges, GST and final jewellery
+  prices may differ.
+
+IF SOMETHING DOES NOT WORK
+- If rates stay blank, check that config.js contains the correct deployed /exec URL.
+- If admin login fails, confirm the password in Code.gs and deploy a new version:
+  Deploy > Manage deployments > Edit > New version > Deploy.
+- If you change Code.gs after deploying, publish a new version of the deployment.
+- If image uploads fail, check that you approved Google Drive permissions and that the image
+  is under 5 MB.

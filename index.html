@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffdf8">
+  <title>Manglam Jewellers | Since 1997</title>
+  <meta name="description" content="Manglam Jewellers, Ghaziabad — gold and silver rates, jewellery and gifts. Serving customers with trust since 1997.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Manglam Jewellers home">
+      <img id="brandLogo" src="assets/manglam-logo.png" alt="Manglam Jewellers logo"
+           onerror="this.style.display='none';document.getElementById('logoFallback').style.display='grid'">
+      <span id="logoFallback" class="logo-fallback" style="display:none">MJ</span>
+      <span class="brand-copy"><strong>Manglam Jewellers</strong><small>Since 1997 · By Saurabh Garg</small></span>
+    </a>
+    <nav>
+      <a href="#rates" data-en="Rates" data-hi="भाव">Rates</a>
+      <a href="#collection" data-en="Collection" data-hi="कलेक्शन">Collection</a>
+      <a href="#about" data-en="About" data-hi="हमारे बारे में">About</a>
+      <a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a>
+      <button id="langBtn" class="lang-btn" type="button">हिंदी</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-kicker" data-en="TRUSTED CRAFTSMANSHIP · EST. 1997" data-hi="विश्वास और गुणवत्ता · स्थापना 1997">TRUSTED CRAFTSMANSHIP · EST. 1997</div>
+      <h1 data-en="A tradition of trust, crafted to cherish." data-hi="विश्वास की परंपरा, हर रिश्ते के लिए खास।">A tradition of trust, crafted to cherish.</h1>
+      <p data-en="Discover timeless gold and silver jewellery at Manglam Jewellers." data-hi="Manglam Jewellers पर सोने और चांदी के खूबसूरत आभूषण देखें।">Discover timeless gold and silver jewellery at Manglam Jewellers.</p>
+      <a class="button button-gold" href="#collection" data-en="Explore Collection" data-hi="कलेक्शन देखें">Explore Collection</a>
+    </section>
+
+    <section id="rates" class="section rates-section">
+      <div class="section-heading">
+        <div><span class="eyebrow" data-en="TODAY'S PRICES" data-hi="आज के भाव">TODAY'S PRICES</span><h2 data-en="Gold & Silver Rates" data-hi="सोने और चांदी के भाव">Gold & Silver Rates</h2></div>
+        <span id="updatedAt" class="updated">Rates updated by Manglam Jewellers</span>
+      </div>
+      <div id="rateGrid" class="rate-grid">
+        <article class="rate-card"><span>24K Gold · 999</span><strong>—</strong><small>per gram</small></article>
+        <article class="rate-card"><span>22K Gold · 916</span><strong>—</strong><small>per gram</small></article>
+        <article class="rate-card"><span>20K Gold · 833</span><strong>—</strong><small>per gram</small></article>
+        <article class="rate-card"><span>18K Gold · 750</span><strong>—</strong><small>per gram</small></article>
+        <article class="rate-card silver-card"><span>Silver · 999</span><strong>—</strong><small>per gram</small></article>
+      </div>
+      <p class="rate-note" data-en="Rates are indicative. Making charges, GST and final jewellery prices may differ. Please confirm the latest rate with the store." data-hi="दिए गए भाव सांकेतिक हैं। मेकिंग चार्ज, GST और आभूषण की अंतिम कीमत अलग हो सकती है। कृपया दुकान से ताज़ा भाव की पुष्टि करें।">Rates are indicative. Making charges, GST and final jewellery prices may differ. Please confirm the latest rate with the store.</p>
+    </section>
+
+    <section id="collection" class="section collection-section">
+      <div class="section-heading">
+        <div><span class="eyebrow" data-en="MADE TO BE CHERISHED" data-hi="खास पलों के लिए">MADE TO BE CHERISHED</span><h2 data-en="Our Collection" data-hi="हमारा कलेक्शन">Our Collection</h2></div>
+      </div>
+      <div id="filters" class="filters">
+        <button class="filter active" data-category="All Products">All Products</button>
+        <button class="filter" data-category="Gold Jewellery">Gold Jewellery</button>
+        <button class="filter" data-category="Silver Jewellery">Silver Jewellery</button>
+        <button class="filter" data-category="Rings">Rings</button>
+        <button class="filter" data-category="Chains">Chains</button>
+        <button class="filter" data-category="Earrings">Earrings</button>
+        <button class="filter" data-category="Bracelets">Bracelets</button>
+        <button class="filter" data-category="Coins & Gifts">Coins & Gifts</button>
+      </div>
+      <div id="productGrid" class="product-grid">
+        <div class="empty-state">Our collection will appear here. Please visit us or contact the store.</div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-mark">MJ</div>
+      <div><span class="eyebrow" data-en="OUR STORY" data-hi="हमारी कहानी">OUR STORY</span>
+        <h2>Manglam Jewellers</h2>
+        <p class="byline">By Saurabh Garg</p>
+        <p data-en="Serving customers with trust and quality since 1997." data-hi="1997 से विश्वास और गुणवत्ता के साथ ग्राहकों की सेवा में।">Serving customers with trust and quality since 1997.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <span class="eyebrow" data-en="VISIT OUR STORE" data-hi="हमारी दुकान पर आएं">VISIT OUR STORE</span>
+      <h2 data-en="We would love to welcome you." data-hi="आपका स्वागत है।">We would love to welcome you.</h2>
+      <p>Manglam Jewellers, H-98, Sector 23, Sanjay Nagar,<br>Ghaziabad, Uttar Pradesh</p>
+      <p><a href="tel:9891393189">9891393189</a></p>
+      <div class="contact-actions">
+        <a class="button button-gold" href="https://wa.me/919891393189?text=Hello%20Manglam%20Jewellers%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp Us</a>
+        <a class="button button-outline" href="https://www.instagram.com/manglam__jeweller/" target="_blank" rel="noopener">Instagram</a>
+        <a class="button button-outline" href="https://share.google/fpJ3IRxAdTCu9oSn0" target="_blank" rel="noopener">Google Reviews</a>
+      </div>
+      <p class="review-help">Tap Google Reviews to open our Google listing.</p>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Manglam Jewellers</span><span>Since 1997 · Ghaziabad</span>
+    <button id="adminOpen" class="admin-link" type="button">Admin Login</button>
+  </footer>
+
+  <dialog id="adminDialog" class="admin-dialog">
+    <form method="dialog" class="dialog-top"><strong>Admin Login</strong><button class="close-btn" aria-label="Close">×</button></form>
+    <div id="loginPanel">
+      <p class="muted">Enter the shared admin password to manage rates and products.</p>
+      <label>Admin password<input id="adminPassword" type="password" autocomplete="current-password" placeholder="Enter password"></label>
+      <button id="loginBtn" class="button button-gold full" type="button">Login</button>
+      <p id="loginError" class="error"></p>
+    </div>
+    <div id="adminPanel" hidden>
+      <div class="admin-tabs"><button class="tab active" data-tab="rateEditor">Rates</button><button class="tab" data-tab="productEditor">Products</button></div>
+      <div id="rateEditor">
+        <h3>Update rates (₹)</h3>
+        <div class="admin-rate-grid" id="adminRateInputs"></div>
+        <button id="saveRates" class="button button-gold full" type="button">Save Rates</button>
+      </div>
+      <div id="productEditor" hidden>
+        <h3>Add a product</h3>
+        <label>Product name<input id="pName" placeholder="e.g. Silver bracelet"></label>
+        <label>Category<select id="pCategory"><option>Gold Jewellery</option><option>Silver Jewellery</option><option>Rings</option><option>Chains</option><option>Earrings</option><option>Bracelets</option><option>Coins & Gifts</option></select></label>
+        <label>Metal type<select id="pMetal"><option>Gold</option><option>Silver</option></select></label>
+        <label>Weight<input id="pWeight" placeholder="e.g. 8.5 g"></label>
+        <label>Optional price (₹)<input id="pPrice" type="number" min="0" placeholder="Leave blank to hide"></label>
+        <label>Short description<input id="pDescription" placeholder="Optional details"></label>
+        <label>Product photo<input id="pImage" type="file" accept="image/*"></label>
+        <label class="check-label"><input id="pShowPrice" type="checkbox"> Display price on website</label>
+        <button id="addProduct" class="button button-gold full" type="button">Upload Product</button>
+        <h3 class="existing-heading">Existing products</h3>
+        <div id="adminProductList" class="admin-product-list"></div>
+      </div>
+      <button id="logoutBtn" class="button button-outline full logout" type="button">Logout</button>
+    </div>
+  </dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
